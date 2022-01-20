@@ -80,6 +80,7 @@ input {
 }
 .note-text {
   flex: 1;
+  word-wrap: break-word;
 }
 .todo-btn {
   padding: 7px;
@@ -108,4 +109,42 @@ svg {
 .dropped {
   transform: translateX(-30px);
   opacity: 0;
+}
+
+/* media */
+@media screen and (max-width: 600px) {
+  .note-list {
+    width: 100%;
+  }
+  .note {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  body {
+    text-align: center;
+  }
+  .note {
+    flex-wrap: wrap;
+  }
+  .todo-btn {
+    margin: 15px 10px;
+  }
+  .note-text {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .todo-form {
+    width: 100%;
+  }
+  .todo-input {
+    width: 100%;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
 }
