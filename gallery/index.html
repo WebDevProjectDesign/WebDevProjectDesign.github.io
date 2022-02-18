@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vanilla javascript lightbox gallery">
+    <link rel="stylesheet" href="style.css">
+    <title>Gallery</title>
+</head>
+
+<body>
+    <div data-galleryWrapper class="wrapper" aria-label="galeria zdjęć zwierząt">
+        <div data-galleryImage class="image">
+            <img src="./img/img1.jpg" alt="slide" tabindex="0">
+        </div>
+
+        <div data-galleryImage class="image"
+            aria-label="Nacisnij enter lub lewy przycisk myszy aby otworzyć slajder ze zdjęciami z galerii">
+            <img src="./img/img2.jpg" alt="slide" tabindex="0">
+        </div>
+
+        <div data-galleryImage class="image"
+            aria-label="Nacisnij enter lub lewy przycisk myszy aby otworzyć slajder ze zdjęciami z galerii">
+            <img src="./img/img3.jpg" alt="slide" tabindex="0">
+        </div>
+
+        <div data-galleryImage class="image"
+            aria-label="Nacisnij enter lub lewy przycisk myszy aby otworzyć slajder ze zdjęciami z galerii">
+            <img src="./img/img4.jpg" alt="slide" tabindex="0">
+        </div>
+
+        <div data-galleryImage class="image"
+            aria-label="Nacisnij enter lub lewy przycisk myszy aby otworzyć slajder ze zdjęciami z galerii">
+            <img src="./img/img5.jpg" alt="slide" tabindex="0">
+        </div>
+
+        <div data-galleryImage class="image"
+            aria-label="Nacisnij enter lub lewy przycisk myszy aby otworzyć slajder ze zdjęciami z galerii">
+            <img src="./img/img6.jpg" alt="slide" tabindex="0">
+        </div>
+
+        <div data-galleryImage class="image"
+            aria-label="Nacisnij enter lub lewy przycisk myszy aby otworzyć slajder ze zdjęciami z galerii">
+            <img src="./img/img7.jpg" alt="slide" tabindex="0">
+        </div>
+
+        <div data-galleryImage class="image"
+            aria-label="Nacisnij enter lub lewy przycisk myszy aby otworzyć slajder ze zdjęciami z galerii">
+            <img src="./img/img8.jpg" alt="slide" tabindex="0">
+        </div>
+
+        <div data-galleryImage class="image"
+            aria-label="Nacisnij enter lub lewy przycisk myszy aby otworzyć slajder ze zdjęciami z galerii">
+            <img src="./img/img9.jpg" alt="slide" tabindex="0">
+        </div>
+
+        <div data-galleryImage class="image"
+            aria-label="Nacisnij enter lub lewy przycisk myszy aby otworzyć slajder ze zdjęciami z galerii">
+            <img src="./img/img10.jpg" alt="slide" tabindex="0">
+        </div>
+
+        <div data-galleryImage class="image"
+            aria-label="Nacisnij enter lub lewy przycisk myszy aby otworzyć slajder ze zdjęciami z galerii">
+            <img src="./img/img11.jpg" alt="slide" tabindex="0">
+        </div>
+
+        <div data-galleryImage class="image"
+            aria-label="Nacisnij enter lub lewy przycisk myszy aby otworzyć slajder ze zdjęciami z galerii">
+            <img src="./img/img12.jpg" alt="slide" tabindex="0">
+        </div>
+
+
+    </div>
+
+    <div data-galleryModal class="hidden">
+        <div data-modalShadow></div>
+        <div data-modalContent>
+            <div data-closeModal aria-label="przycisk zamknięcia slajdera">
+                <img src="./icons//iconmonstr-x-mark-1-32.png" alt="close modal icon">
+            </div>
+            <div data-modalDescription aria-label="">unknown</div>
+            <div data-modalSlide class="">
+                <div data-previousSlide data-slideButton aria-label="przycisk przełącza na poprzedni slajd">
+                    <img src="./icons/iconmonstr-arrow-64-32.png" alt="previous slide button icon">
+                </div>
+                <div data-nextSlide data-slideButton aria-label="przycisk przełącza na następny slajd">
+                    <img src="./icons/iconmonstr-arrow-25-32.png" alt="next slide button icon">
+                </div>
+                <img data-currentSlide src="" alt="current gallery photo">
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
